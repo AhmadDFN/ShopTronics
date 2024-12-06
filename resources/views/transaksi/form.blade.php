@@ -4,17 +4,18 @@
 @section('page-title', $page)
 
 @section('content')
-    <div class="row m-0 p-0" style="background-color: rgb(0, 0, 0)">
+    <div class="row m-0 p-0" style="background-color: #e5e5e5">
         {{-- Loading --}}
         <div id="loading"></div>
         {{--  End Transaksi  --}}
         <div class="col-md-8 p-0">
-            <div class="card" style="background-color: rgb(25, 0, 114)">
+            <div class="card" style="background-color: #541c4c">
                 <div class="card-header">
                     <div class="row">
                         <div class="col-8">
                             <h2 class="card-title" style="font-size: 24px; color:aliceblue;">
-                                <a href="{{ url('/') }}"><i class="fas fa-home"></i></a> DAFTAR PRODUK
+                                <a href="{{ url('/') }}"><i class="fas fa-home" style="color: #d00054"></i></a> DAFTAR
+                                PRODUK
                             </h2>
                         </div>
                         <div class="col-4">
@@ -74,7 +75,7 @@
             <!--  End List Menu -->
         </div>
         <div class="col-md-4 pe-0">
-            <div class="transaksi">
+            <div class="transaksi" style="background-color: #541c4c">
                 <form id="frmTransaksi" action="{{ url('transaksi') }}" method="post">
                     @csrf
                     {{-- Info Transaksi --}}
@@ -85,8 +86,8 @@
                         </div>
                         <div class="col-md-2" style="text-align: end" data-bs-toggle="modal"
                             data-bs-target="#modal-customer">
-                            <a class="btn btn-sm" style="background-color: rgb(232, 38, 38)"><i
-                                    class="fas fa-ellipsis-h text-black-50"></i></a>
+                            <a class="btn btn-sm" style="background-color: #d00054"><i
+                                    class="fas fa-ellipsis-h text-white"></i></a>
                         </div>
                     </div>
                     <p>
@@ -99,7 +100,7 @@
                             <option value="Cash">Cash</option>
                             <option value="Hutang">Hutang</option>
                         </select>
-                        <label for="trans_pembayaran" style="color: cyan">Pembayaran</label>
+                        <label for="trans_pembayaran" style="color: #e5e5e5">Pembayaran</label>
                     </p>
                     {{-- End Info Transaksi --}}
                     <hr style="border-top: 2px dashed rgb(255, 255, 255);">
@@ -130,10 +131,10 @@
                     <div class="row btn-action">
                         <div class="col-md-6">
                             <button id="btn-save" class="btn text-light"
-                                style="background-color: rgb(130, 123, 0); border: 2px solid rgb(0, 0, 0);" type="button"
+                                style="background-color: #920e50; border: 2px solid #d00054;" type="button"
                                 onclick="save_transaksi()" data-url="{{ url('transaksi/nota') }}">SIMPAN</button>
                             <button id="btn-new" class="btn d-none text-light"
-                                style="background-color: rgb(3, 70, 12); border: 2px solid rgb(0, 0, 0);" type="button"
+                                style="background-color: #920e50; border: 2px solid #d00054;" type="button"
                                 onclick="new_transaksi()">TRANSAKSI BARU</button>
                         </div>
                         <div class="col-md-6">
