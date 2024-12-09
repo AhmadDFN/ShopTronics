@@ -18,7 +18,7 @@
     <a href="{{ url('/detailtransaksi') }}" class="{{ $title == 'Detail transaksi' ? 'active' : '' }}"
         target="blank_"><i class="fa fa-file me-2 ms-1"></i>Detail transaksi</a>
     <a href="{{ url('/detailhutang') }}" class="{{ $title == 'Detail hutang' ? 'active' : '' }}"><i
-            class="fa-solid fa-file-lines me-2 ms-1"></i>Detail hutang</a>
+            class="fa-solid fa-file-lines me-2 ms-1"></i>Detail piutang</a>
     <h4 class="ms-2 mt-4">⚙️ Settings</h4>
     <a href="{{ url('akun') }}" class="{{ $title == 'Akun' ? 'active' : '' }}">👥 Users</a>
 </div>
